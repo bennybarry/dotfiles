@@ -1,0 +1,83 @@
+{
+    // App
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "window.titleBarStyle": "custom",
+    "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
+    "workbench.startupEditor": "newUntitledFile",
+
+    // Editor
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never",
+    "editor.rulers": [79, 100],
+    "editor.wordWrap": "on",
+    "editor.renderFinalNewline": "dimmed",
+    "editor.guides.bracketPairs": "active",
+    "editor.guides.bracketPairsHorizontal": "active",
+    "editor.hover.above": false,
+    "editor.cursorSurroundingLines": 4,
+    //"editor.fontFamily": "'Cascadia Code NF', 'Droid Sans Mono', 'Adwaita Mono', 'monospace', monospace",
+    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+    },
+
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false,
+
+    // Debug
+    "debug.showBreakpointsInOverviewRuler": true,
+    "debug.showVariableTypes": true,
+    "debug.toolBarLocation": "commandCenter",
+
+    // Python
+    "python.defaultInterpreterPath": "/bin/python3",
+    "python.analysis.typeCheckingMode": "standard",
+
+    // Terminal
+    // "terminal.integrated.enableMultiLinePasteWarning": false, // Fixes transparent underscores on Ubuntu
+
+    // Git
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+
+    // Misc
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // File extensions
+    "files.associations": {
+        "*.toml": "ini",
+    },
+    "workbench.editor.untitled.hint": "hidden",
+
+    // OS Specific ?
+    // Terminal
+    "terminal.integrated.fontFamily": "Ubuntu Mono",
+    "security.workspace.trust.untrustedFiles": "open",
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // AI BS
+    "chat.editRequests": "none",
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "chat.detectParticipant.enabled": false,
+    "chat.extensionTools.enabled": false,
+    "chat.mcp.enabled": false,
+}

@@ -1,0 +1,37 @@
+[user]
+	name = BennyBarry
+[push]
+	default = current
+[init]
+	defaultBranch = main
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	ignore = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi"
+	co = checkout
+	ci = commit
+	cbranch = rev-parse --abbrev-ref HEAD
+	wave = log --decorate --graph --color --oneline
+	graph = log --decorate --graph --color
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[color "status"]
+	header = white
+	added = green
+	changed = red
+	untracked = yellow
+	branch = bold white
+	nobranch = reverse magenta
+[color "branch"]
+	current = reverse green
+	local = white
+	remote = cyan
+	upstream = cyan
+	plain = reverse cyan
+[log]
+	date = iso
+[pull]
+	ff = only
+	rebase = true
