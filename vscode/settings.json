@@ -5,9 +5,6 @@
     "window.titleBarStyle": "custom",
     "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
 
     // Editor
     "editor.autoClosingOvertype": "never",
@@ -15,13 +12,13 @@
     "editor.autoClosingBrackets": "never",
     "editor.rulers": [80, 100],
     "editor.wordWrap": "on",
-    "editor.renderFinalNewline": false,
+    "editor.renderFinalNewline": "dimmed",
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": "active",
     "editor.hover.above": false,
     "editor.cursorSurroundingLines": 4,
-    // "editor.scrollBeyondLastLine": true,
-    // "editor.scrollBeyondLastColumn": 7,
+    "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace",
+
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
@@ -33,42 +30,29 @@
         "**/.DS_Store": true,
         "**/__pycache__": true,
     },
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
 
-    // Extensions
-    "docker.showStartPage": false,
-
-    // Type specific
-    "[markdown]": {
-        "editor.wordWrap": "on",
-        "editor.quickSuggestions": false,
-        "files.trimTrailingWhitespace": false,
-    },
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false,
 
     // Python
-    "python.showStartPage": false,
     "python.defaultInterpreterPath": "/bin/python3",
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "[python]": {
-        "editor.tabSize": 4,
-        "gitlens.codeLens.symbolScopes": [
-            "!Module"
-        ]
-    },
-    "python.formatting.provider": "autopep8",
-    "python.formatting.autopep8Args": [
-        "--max-line-length=80",
-        // "--aggressive",
-        "--ignore", "E402",
-    ],
-    "python.linting.flake8Args": [
-        "--ignore", "E722,W503,W504",
-    ],
+    "python.analysis.typeCheckingMode": "standard",
 
+    // Terminal
+    // "terminal.integrated.enableMultiLinePasteWarning": false, // Fixes transparent underscores on Ubuntu
+
+    // Git
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+
+    // Misc
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
     // File extensions
     "files.associations": {
@@ -76,21 +60,9 @@
     },
     "workbench.editor.untitled.hint": "hidden",
 
+    // OS Specific ?
     // Terminal
     "terminal.integrated.fontFamily": "Ubuntu Mono",
     "security.workspace.trust.untrustedFiles": "open",
     "diffEditor.ignoreTrimWhitespace": false,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "php.validate.executablePath": "/usr/bin/php",
-    "html.autoClosingTags": false,
-    "javascript.autoClosingTags": false,
-    "typescript.autoClosingTags": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true,
-    "terminal.integrated.enableMultiLinePasteWarning": false, // Fixes transparent underscores on Ubuntu
 }
