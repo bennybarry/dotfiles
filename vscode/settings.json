@@ -10,7 +10,7 @@
     "editor.autoClosingOvertype": "never",
     "editor.autoClosingQuotes": "never",
     "editor.autoClosingBrackets": "never",
-    "editor.rulers": [80, 100],
+    "editor.rulers": [79, 100],
     "editor.wordWrap": "on",
     "editor.renderFinalNewline": "dimmed",
     "editor.guides.bracketPairs": "active",
