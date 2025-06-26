@@ -17,7 +17,8 @@
     "editor.guides.bracketPairsHorizontal": "active",
     "editor.hover.above": false,
     "editor.cursorSurroundingLines": 4,
-    "editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace",
+    //"editor.fontFamily": "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace",
+    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
 
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
@@ -35,6 +36,11 @@
     "javascript.autoClosingTags": false,
     "typescript.autoClosingTags": false,
 
+    // Debug
+    "debug.showBreakpointsInOverviewRuler": true,
+    "debug.showVariableTypes": true,
+    "debug.toolBarLocation": "commandCenter",
+
     // Python
     "python.defaultInterpreterPath": "/bin/python3",
     "python.analysis.typeCheckingMode": "standard",
@@ -45,6 +51,7 @@
     // Git
     "git.enableSmartCommit": true,
     "git.autofetch": true,
+    "git.confirmSync": false,
 
     // Misc
     "[typescriptreact]": {
