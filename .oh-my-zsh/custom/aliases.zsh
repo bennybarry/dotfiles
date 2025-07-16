@@ -6,9 +6,7 @@ alias ll="ls -lh --group-directories-first"
 alias lll="ls -lAh --group-directories-first"
 alias l="ll"
 alias j="jobs"
-alias gfind='ls -1 ~/devel/{puppet,puppet-7}/enc | sed '\''s/.yaml//g'\'' | grep'
-alias dc="docker-compose"
-alias fmtgenlint="just fmt && uv run gncorpo gensync && uv run ruff check --fix . && uv run ruff format src tests && uv run ruff check && uv run mypy src/ tests/"
+
 
 function gi() {
     if [[ $# -gt 0 ]]; then

@@ -1,3 +1,4 @@
+alias dc="docker-compose"
 alias dc-images='dc config --services | sort'
 alias docker-kill-all='docker kill $(docker ps -q)'
 alias docker-purge='docker rm $(docker ps -a -q)'
