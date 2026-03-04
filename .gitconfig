@@ -1,7 +1,10 @@
 [user]
+	email =
 	name = BennyBarry
+
 [push]
 	default = current
+	autoSetupRemote = true
 [init]
 	defaultBranch = main
 [alias]
@@ -12,6 +15,7 @@
 	cbranch = rev-parse --abbrev-ref HEAD
 	wave = log --decorate --graph --color --oneline
 	graph = log --decorate --graph --color
+	pyll = pull
 [color]
 	diff = auto
 	status = auto

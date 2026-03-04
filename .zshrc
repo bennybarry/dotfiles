@@ -72,6 +72,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git fzf)
 
+export DISABLE_AUTO_UPDATE=true
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -104,3 +105,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(starship init zsh)"
+
+export HISTSIZE=50000
+export SAVEHIST=50000
+export HISTIGNORE="git push --force*:git *--fixup*:just release*:ls *:ll *:lll *"
+export HISTORY_IGNORE="${HISTIGNORE}"
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+
+source /usr/share/nvm/init-nvm.sh
