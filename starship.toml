@@ -19,13 +19,17 @@ $nodejs\
 $python\
 [](fg:green bg:sapphire)\
 $conda\
-[](fg:sapphire bg:lavender)\
 $custom\
+[](fg:prev_bg bg:lavender)\
 $jobs\
 [ ](fg:lavender)\
 $cmd_duration\
 $line_break\
 $character"""
+
+
+right_format = """
+"""
 
 palette = 'catppuccin_mocha'
 
@@ -138,8 +142,8 @@ format = "[$symbol ]($style)"
 #[custom.nomad_env]
 #when = "test -f .env && grep -q '^NOMAD_ENV=' .env"
 #command = "source .env && echo $NOMAD_ENV"
-#style = "fg:base bg:lavender bold"
-#format = "[nomad $output ]($style)"
+#format = "[](fg:sapphire bg:teal)[ nomad $output ]($style)"
+#style = "fg:base bg:teal bold"
 
 [cmd_duration]
 show_milliseconds = true
