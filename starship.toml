@@ -4,6 +4,7 @@ format = """
 [](red)\
 $os\
 $username\
+$nomad_env\
 [](bg:peach fg:red)\
 $directory\
 [](bg:yellow fg:peach)\
@@ -19,6 +20,7 @@ $python\
 [](fg:green bg:sapphire)\
 $conda\
 [](fg:sapphire bg:lavender)\
+$custom\
 $jobs\
 [ ](fg:lavender)\
 $cmd_duration\
@@ -127,6 +129,17 @@ vimcmd_symbol = '[❮](bold fg:green)'
 vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
 vimcmd_replace_symbol = '[❮](bold fg:lavender)'
 vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+
+[jobs]
+style = "fg:base bg:lavender bold"
+symbol = "✦"
+format = "[$symbol ]($style)"
+
+[custom.nomad_env]
+when = "test -f .env && grep -q '^NOMAD_ENV=' .env"
+command = "source .env && echo $NOMAD_ENV"
+style = "fg:base bg:lavender bold"
+format = "[nomad $output ]($style)"
 
 [cmd_duration]
 show_milliseconds = true
