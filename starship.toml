@@ -135,11 +135,11 @@ style = "fg:base bg:lavender bold"
 symbol = "✦"
 format = "[$symbol ]($style)"
 
-[custom.nomad_env]
-when = "test -f .env && grep -q '^NOMAD_ENV=' .env"
-command = "source .env && echo $NOMAD_ENV"
-style = "fg:base bg:lavender bold"
-format = "[nomad $output ]($style)"
+#[custom.nomad_env]
+#when = "test -f .env && grep -q '^NOMAD_ENV=' .env"
+#command = "source .env && echo $NOMAD_ENV"
+#style = "fg:base bg:lavender bold"
+#format = "[nomad $output ]($style)"
 
 [cmd_duration]
 show_milliseconds = true
